@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4284f4</color>
+    <color name="colorPrimaryDark">#4284f4</color>
+    <color name="colorAccent">#4284f4</color>
+    <color name="googleBlue">#4284f4</color>
+    <color name="fragmentColor">#FFEED7</color>
+    <color name="lightYellow">#FFEED7</color>
+</resources>

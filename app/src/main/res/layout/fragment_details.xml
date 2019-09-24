@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstNamePalette"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="First Name:"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:editable="false"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MiddleName"
+        android:layout_below="@id/FirstNamePalette"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Middle Name:"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/middleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:editable="false"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LastName"
+        android:layout_below="@id/MiddleName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Last Name:"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:editable="false"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MobileNumber"
+        android:layout_below="@id/LastName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Mobile:"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MobileNumber"
+        android:id="@+id/Address"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Address:"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/address"
+            android:editable="false"
+            android:lines="2"
+            android:minLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginRight="8dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/update"
+        android:layout_below="@id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/googleBlue"
+        android:text="Update"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
